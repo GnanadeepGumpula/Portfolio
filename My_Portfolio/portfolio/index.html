@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html id="html" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/Profile_Pic.jpeg">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/Profile_Pic.jpeg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Profile_Pic.jpeg">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/Profile_Pic.jpeg">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#a789d4">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/c44dbc2ee4.js" crossorigin="anonymous"></script>
+
+    <!--=============== JS ================-->
+    <script src="assets/js/main_animation.js"></script>
+    <script src="assets/js/index.j"></script>
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <!--=================== SWIPER CSS/CSS ===================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/main_styles.css">
+
+    <title> Gnanadeep's Portfolio </title>
+</head>
+
+<body id="body">
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Gnanadeep</a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item ">
+                        <a href="#home" class="nav__link">
+                            <i class='bx bx-home'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item ">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-book'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <i class='bx bx-briefcase-alt-2'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class='bx bx-photo-album'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#certificate" class="nav__link">
+                            <i class='bx bxs-trophy'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-message-square-dots'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--=============== theme change button ===============-->
+            <i class='bx bx-moon change-theme change-theme-button' id="theme-button"></i>
+
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__greeting">Hello, I'm</span>
+                    <h1 class="home__name">Gnanadeep Gumpula</h1>
+                    <h3 class="home__education"  data-hold-time="1000" data-switch-content='[ "A Web_Developer..","A Android App_Developer..."]'></h3>
+
+                    <div class="home__button">
+                        <a download="" href="assets/pdf/hailee-Cv.pdf" class="button button--ghost">
+                            Download CV
+                        </a>
+
+                        <a href="#about" class="button">About</a>
+                    </div>
+                </div>
+
+                <div class="home__handle">
+                    <img src="./assets/img/bg_MY_pIc.png" alt="profile_1" class="home__img">
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/gnanadeep-gumpula-9bb12b309" target="_blank" class="home__social-link">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://github.com/GnanadeepGumpula" target="_blank" class="home__social-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="#" target="_blank" class="home__social-link">
+                        <i class='bx bxl-dribbble'></i>
+                    </a>
+                </div>
+
+                <a href="#about" class="home__scroll">
+                    <i class='bx bx-mouse home__scroll-icon'></i>
+                    <span class="home__scroll-name">Scroll Down</span>
+                </a>
+            </div>
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="about" id="about">
+                    <div class="about-img">
+                        <img src="./assets/img/bg_MY_pIc_2.png" alt="profile_2" id="about-img">
+                    </div>
+                    <div class="about-text">
+                        <h2>About <span>Me</span></h2>
+                        <p id="p">Hello! <br> I'm a passionate Web Developer and Android App Developer with a knack for creating dynamic, user-friendly websites and mobile applications. With a strong foundation in both front-end and back-end technologies, I enjoy bringing innovative ideas to life through code. My expertise spans across HTML, CSS, JavaScript, and popular frameworks like React and Angular for web development, as well as Java and Kotlin for Android app development.In my journey as a developer, I've worked on a variety of projects that range from building responsive websites to developing complex mobile apps. I thrive on challenges and constantly seek to learn new technologies and improve my skills. My goal is to build applications that not only meet but exceed client expectations, providing seamless user experiences and robust functionality.
+                        </p>
+            
+                        <a href="#" class="button">More About Me</a>
+                    </div>
+                </section>
+
+        <!--=============== SKILLS ===============-->
+        <h1 class="sub-title">My <span>Skills</span></h1>
+        <section class="skills section" id="skills">
+            
+            <div class="container1">
+                <h1 class="heading1">Technical Skills</h1>
+                <div class="Technical-bars">
+                    <div class="bar"><i style="color: #c95d2e;" class="fa-brands fa-html5"></i>
+                        <div class="info">
+                            <span>HTML</span>
+                        </div>
+                        <div class="progress-line html">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar"><i style="color: #147bbc;" class="fa-brands fa-css3-alt"></i>
+                        <div class="info">
+                            <span>CSS</span>
+                        </div>
+                        <div class="progress-line css">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar"><i style="color: #b0bc1e;" class="fa-brands fa-square-js"></i>
+                        <div class="info">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="progress-line javascript">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar"><i style="color: #c32ec9;" class="fa-brands fa-python"></i>
+                        <div class="info">
+                            <span>Python</span>
+                        </div>
+                        <div class="progress-line python">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar"><i style="color: #69bcbc;" class="fa-brands fa-react"></i>
+                        <div class="info">
+                            <span>React</span>
+                        </div>
+                        <div class="progress-line react">
+                            <span></span>
+                        </div>
+                        <!--<div class="bar"><i style="color: #ff0000;" class="bx bxl-data"></i>
+                            <div class="info">
+                                <span>Oracle</span>
+                            </div>
+                            <div class="progress-line react">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar"><i style="color: #ff0202;" class="fa-brands fa-java"></i>
+                            <div class="info">
+                                <span>Java</span>
+                            </div>
+                            <div class="progress-line react">
+                                <span></span>
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="bar"><i style="color: #c92e2e;" class="fa-brands fa-java"></i>
+                        <div class="info">
+                            <span>Python</span>
+                        </div>
+                        <div class="progress-line python">
+                            <span></span>
+                        </div>
+                    </div><div class="bar"><i style="color:aliceblue" class='bx bxs-data  bx-flip-horizontal'></i>
+                        <div class="info">
+                            <span>SQL</span>
+                        </div>
+                        <div class="progress-line python">
+                            <span></span>
+                        </div>
+                    </div><div class="bar"><i style="color:#516beb;" class='bx bxl-visual-studio'></i>
+                        <div class="info">
+                            <span>visual-studio</span>
+                        </div>
+                        <div class="progress-line python">
+                            <span></span>
+                        </div>
+                    </div><div class="bar"><i style="color: #c32ec9;" class="bx bxl-php"></i>
+                        <div class="info">
+                            <span>PHP</span>
+                        </div>
+                        <div class="progress-line python">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container1">
+                <h1 class="heading1">Professional Skills</h1>
+                <div class="radial-bars">
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">90%</div>
+                    <div class="test">Creativity</div>
+                </div>
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">65%</div>
+                    <div class="test">Communication</div>
+                </div>
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">75%</div>
+                    <div class="test">Problem Solving</div>
+                </div>
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">98%</div>
+                    <div class="test">Teamwork</div>
+                </div>
+
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">85%</div>
+                    <div class="test">Creativity</div>
+                </div>
+
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">90%</div>
+                    <div class="test">Organization Skills</div>
+                </div>
+
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">69%</div>
+                    <div class="test">Administrative Skills</div>
+                </div>
+
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">75%</div>
+                    <div class="test">Data Analysis </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SERVICES ===============-->
+        <section class="services section" id="work">
+            <div class="work__container container grid"></div>
+            <div class="services" id="services" >
+                <div class="containerm">
+                    <h1 class="sub-title">My <span>Services</span></h1>
+                    <div class="services-list">
+                        <div>
+                            <i class="fa-solid fa-code fa-beat" style="color: #00eeff;"></i>
+                            <h2>Web Design</h2>
+                            <p id="p">Crafting visually stunning and user-friendly websites that captivate audiences and drive results.
+                                Blending creativity, technical expertise, and a deep understanding of user experience to deliver exceptional web designs.
+                                Transforming your online presence with innovative, responsive, and SEO-optimized web designs tailored to your unique business needs.</p>
+                            <a href="#" class="read">Read More</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-crop-simple fa-beat" style="color: #00eeff;"></i>
+                            <h2>Ai/Ml Design</h2>
+                            <p>Harnessing the power of artificial intelligence and machine learning to create innovative solutions that revolutionize industries.
+                                Designing cutting-edge AI/ML systems that optimize processes, enhance decision-making, and drive business growth.
+                                Combining advanced algorithms, data analysis, and a deep understanding of user needs to develop intelligent systems that transform the future.</p>
+                            <a href="#" class="read">Read More</a>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-app-store fa-beat" style="color: #00eeff;"></i>
+                            <h2>App Design</h2>
+                            <p>Crafting intuitive, visually appealing, and user-centric mobile applications that captivate audiences and drive engagement.
+                                Blending creativity, technical expertise, and a deep understanding of user experience to deliver exceptional app designs tailored to your target audience.
+                                Transforming your mobile presence with innovative, responsive, and feature-rich applications that seamlessly integrate with your business ecosystem.</p>
+                            <a href="#" class="read">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== project ===============-->
+        <section class="testimonial section" id="portfolio">
+            <div id="portfolio">
+                <div class="main-text">
+                    <h2>Latest <span>Project</span></h2>
+    
+                    <div class="portfolio-content">
+                        <div class="row">
+                            <img src="./assets/img/F&O-Logo.jpg" alt="F&O Detector">
+                            <div class="layer">
+                                <h5>F&O Detector</h5>
+                                <p>Developed an advanced web application that utilizes cutting-edge algorithms for real-time face and object detection, enhancing user interaction and functionality.</p>
+                                <a href="https://fodetective.42web.io/?i=1"><i class="fa-solid fa-up-right-from-square fa-beat"></i></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="./assets/img/icon.jpg" alt="">
+                            <div class="layer">
+                                <h5>Dream Cart</h5>
+                                <p>Created "Dream_CART_Fashion Never Ends," an engaging e-commerce platform that celebrates timeless fashion and empowers users to explore endless style possibilities.+
+
+                                </p>
+                                <a href="#"><i class="fa-solid fa-up-right-from-square fa-beat"></i></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="./assets/img/coming_Soon logo.jpeg" alt="">
+                            <div class="layer">
+                                <h5>coming_Soon</h5>
+                                <p>The project is in the process</p>
+                                <a href="#"><i class="fa-solid fa-up-right-from-square fa-beat"></i></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="./assets/img/Coming_Soon_LOGO_2.jpeg" alt="">
+                            <div class="layer">
+                                <h5>coming_Soon</h5>
+                                <p>The project is in the process</p>
+                                <a href="#"><i class="fa-solid fa-up-right-from-square fa-beat"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--=============== CERTIFICATES ===============-->
+        <section class="certificate" id="certificate" >
+            <h2><span>C</span>ertificates</h2>
+            <section class="section">
+                <div class="swiper-slide">
+                <div class="container-general">
+                    <div class="gallery-wrap wrap-effect-3">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </section>
+        
+        <!--=============== CONTACT ===============-->
+        <section class="contact section" id="contact">
+            <sapn class="section__subtitle">Get in touch</sapn>
+            <h3 class="section__title">Contact Me</h3>
+
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title contact__title-info">Talk to me</h3>
+
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class='bx bx-mail-send contact__card-icon'></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">gumpulagnanadeep@gmail.com</span>
+
+                            <a href="mailto:gumpulagnanadeep@gmail.com" target="_blank" class="contact__button">
+                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-whatsapp contact__card-icon'></i>
+                            <h3 class="contact__card-title">Whatsapp</h3>
+                            <span class="contact__card-data">9705045597</span>
+
+                            <a href="https://api.whatsapp.com/send?phone=+919705045597text=Hey there!" target="_blank"
+                                class="contact__button">
+                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bx-support contact__card-icon'></i>
+                            <h3 class="contact__card-title">Support</h3>
+                            <span class="contact__card-data">9705045597</span>
+
+                            <a href="phoneto:+919705045597" target="_blank" class="contact__button">
+                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <h3 class="contact__title contact__title-form">Write Me your Message</h3>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Name</label>
+                            <input type="text" placeholder="Enter name" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Mail</label>
+                            <input type="text" placeholder="Enter email" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div contact__form-area">
+                            <label for="" class="contact__form-tag">Message</label>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Write your Message"
+                                class="contact__form-input "></textarea>
+                        </div>
+
+
+                        <button class="button">
+                            Send Message
+                        </button>
+                    </form>
+
+                </div>
+
+        </section>
+    </main>
+    
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Gnanadeep</h1>
+
+            <ul class="footer__list">
+
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Home</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#skills" class="footer__link">Skills</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#work" class="footer__link">Work</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#contact" class="footer__link">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                <li class="footer__social-item">
+                    <a href="https://github.com/GnanadeepGumpula" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-github footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-telegram footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://www.linkedin.com/in/gnanadeep-gumpula-9bb12b309/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-linkedin footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://www.instagram.com/funnygnanadeep" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram footer__social-icon'></i>
+                    </a>
+                </li>
+            </ul>
+
+            <span class="footer__copy">
+                &#169; 2024. All rights reserved.
+            </span>
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+
+    <!-- <script src="assets/js/scrollreveal.min.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"type="text/javascript" charset="utf-8"></script>
+
+</body>
+
+</html>
