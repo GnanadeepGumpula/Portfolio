@@ -339,7 +339,7 @@ body.light-theme {
 }
 
 .home__img {
-  width: 160px;
+  width: 2560px;
 }
 
 .home__handle {
@@ -450,10 +450,10 @@ body.light-theme {
   gap: 1.5rem;
 }
 .about-img img{
-  padding-bottom: 20%;
-  margin-top: 10%;
-  margin-left: 20%;
-  max-width: 390px;
+  padding-bottom: 10%;
+  margin-top: 15%;
+  margin-left: 40%;
+  max-width: 300px;
   height: auto;
   width: 100%;
   border-radius: 8px;
@@ -1053,7 +1053,7 @@ body.light-theme {
     font-size: 10px;
   }
   .home__img {
-    width: 90px;
+    width: 200px;
   }
 
   .about__info {
@@ -1472,7 +1472,7 @@ body.light-theme {
   }
 
   .home__img {
-    width: 150px;
+    width: 1050px;
   }
   .home__social-link {
     padding: 0.4rem;
