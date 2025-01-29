@@ -25,8 +25,11 @@
     <script src="assets/js/index.j"></script>
     <script src="assets/js/jquery-1.11.1.min.js"></script>
     <!--=================== SWIPER CSS/CSS ===================-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/main_styles.css">
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
 
     <title> Gnanadeep's Portfolio </title>
 </head>
@@ -99,7 +102,7 @@
                     <h3 class="home__education"  data-hold-time="1000" data-switch-content='[ "A Web_Developer..","A Android App_Developer..."]'></h3>
 
                     <div class="home__button">
-                        <a download="" href="assets/pdf/Gnanadeep_Gumpula-CV.pdf" class="button button--ghost">
+                        <a download="" href="assets/pdf/hailee-Cv.pdf" class="button button--ghost">
                             Download CV
                         </a>
 
@@ -108,7 +111,7 @@
                 </div>
 
                 <div class="home__handle">
-                    <img src="./assets/img/bg_MY_pIc.png" alt="profile_1" class="home__img">
+                    <img src="./assets/img/bg_MY_pIc_0.png" alt="profile_1" class="home__img">
                 </div>
 
                 <div class="home__social">
@@ -132,13 +135,14 @@
 
         <!--=============== ABOUT ===============-->
         <section class="about" id="about">
-            <div class="about-img">
+                    <div class="about-img">
                         <img src="./assets/img/bg_MY_pIc_2.png" alt="profile_2" id="about-img">
                     </div>
                     <div class="about-text">
                         <h2>About <span>Me</span></h2>
                         <p id="p">Hello! <br> I'm a passionate Web Developer and Android App Developer with a knack for creating dynamic, user-friendly websites and mobile applications. With a strong foundation in both front-end and back-end technologies, I enjoy bringing innovative ideas to life through code. My expertise spans across HTML, CSS, JavaScript, and popular frameworks like React and Angular for web development, as well as Java and Kotlin for Android app development.In my journey as a developer, I've worked on a variety of projects that range from building responsive websites to developing complex mobile apps. I thrive on challenges and constantly seek to learn new technologies and improve my skills. My goal is to build applications that not only meet but exceed client expectations, providing seamless user experiences and robust functionality.
                         </p>
+            
                         <a href="#" class="button">More About Me</a>
                     </div>
                 </section>
@@ -208,7 +212,7 @@
                     </div>
                     <div class="bar"><i style="color: #c92e2e;" class="fa-brands fa-java"></i>
                         <div class="info">
-                            <span>Java</span>
+                            <span>Python</span>
                         </div>
                         <div class="progress-line python">
                             <span></span>
@@ -255,7 +259,7 @@
                         <circle class="path path-2" cx="100" cy="100" r="80"></circle>
                     </svg>
                     <div class="percentage">65%</div>
-                    <div class="test">Management</div>
+                    <div class="test">Communication</div>
                 </div>
                 <div class="radial-bar">
                     <svg x="0px" y="0px" viewBox="0 0 200 200">
@@ -280,7 +284,7 @@
                         <circle class="path path-3" cx="100" cy="100" r="80"></circle>
                     </svg>
                     <div class="percentage">85%</div>
-                    <div class="test">Communication</div>
+                    <div class="test">Creativity</div>
                 </div>
 
                 <div class="radial-bar">
@@ -354,43 +358,66 @@
             <div id="portfolio">
                 <div class="main-text">
                     <h2>Latest <span>Project</span></h2>
-    
-                    <div class="portfolio-content">
-                        <div class="row">
-                            <img src="./assets/img/F&O-Logo.jpg" alt="F&O Detector">
-                            <div class="layer">
-                                <h5>F&O Detector</h5>
-                                <p>Developed an advanced web application that utilizes cutting-edge algorithms for real-time face and object detection, enhancing user interaction and functionality.</p>
-                                <a href="https://fodetective.42web.io/?i=1"><i class="fa-solid fa-up-right-from-square fa-beat"></i></a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <img src="./assets/img/icon.jpg" alt="">
-                            <div class="layer">
-                                <h5>Dream Cart</h5>
-                                <p>Created "Dream_CART_Fashion Never Ends," an engaging e-commerce platform that celebrates timeless fashion and empowers users to explore endless style possibilities.+
 
-                                </p>
-                                <a href="#"><i class="fa-solid fa-up-right-from-square fa-beat"></i></a>
+                   <div class="project"> 
+                    <div class="blog-slider">
+                        <div class="blog-slider__wrp swiper-wrapper">
+                          <!-- Slide 1  -->
+                          <div class="blog-slider__item swiper-slide">
+                            <div class="blog-slider__img">
+                              
+                              <img src="./assets/img/icon.jpg" alt="Dream_Cart">
                             </div>
-                        </div>
-                        <div class="row">
-                            <img src="./assets/img/coming_Soon logo.jpeg" alt="">
-                            <div class="layer">
-                                <h5>coming_Soon</h5>
-                                <p>The project is in the process</p>
-                                <a href="#"><i class="fa-solid fa-up-right-from-square fa-beat"></i></a>
+                            <div class="blog-slider__content">
+                              <span class="blog-slider__code">26 December 2019</span>
+                              <div class="blog-slider__title">Dream_Cart</div>
+                              <div class="blog-slider__text">A ecommerce website that allows users to buy and sell products online. </div>
+                              <a href="#" class="blog-slider__button">READ MORE</a>
+                              <a href="#" class="blog-slider__button">READ MORE</a>
                             </div>
-                        </div>
-                        <div class="row">
-                            <img src="./assets/img/Coming_Soon_LOGO_2.jpeg" alt="">
-                            <div class="layer">
-                                <h5>coming_Soon</h5>
-                                <p>The project is in the process</p>
-                                <a href="#"><i class="fa-solid fa-up-right-from-square fa-beat"></i></a>
+                          </div>
+                           <!-- Slide 2  -->
+                          <div class="blog-slider__item swiper-slide">
+                            <div class="blog-slider__img">
+                            <img src="./assets/img/F&O-Logo.jpg" alt="F&O_Detector">
                             </div>
+                            <div class="blog-slider__content">
+                              <span class="blog-slider__code">26 December 2019</span>
+                              <div class="blog-slider__title">F&O_Detector</div>
+                              <div class="blog-slider__text">A website that allows users to detect face and object.</div>
+                              <a href="#" class="blog-slider__button">READ MORE</a>
+                              <a href="#" class="blog-slider__button">READ MORE</a>
+                            </div>
+                          </div>
+                          <!-- Slide 3  -->
+                          <div class="blog-slider__item swiper-slide">
+                            <div class="blog-slider__img">
+                              <img src="./assets/img/coming_Soon logo.jpeg" alt="">
+                            </div>
+                            <div class="blog-slider__content">
+                              <span class="blog-slider__code">26 December 2019</span>
+                              <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+                              <a href="#" class="blog-slider__button">READ MORE</a>
+                              <a href="#" class="blog-slider__button">READ MORE</a>
+                            </div>
+                          </div>
+                          <!-- Slide 4  -->
+                          <div class="blog-slider__item swiper-slide">
+                                <div class="blog-slider__img">
+                                  <img src="./assets/img/TapBattle-Logo.jpg" alt="TapBattle">
+                                </div>
+                                <div class="blog-slider__content">
+                                  <span class="blog-slider__code">26 December 2019</span>
+                                  <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                                  <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+                                  <a href="#" class="blog-slider__button">READ MORE</a>
+                                </div>
+                              </div>
                         </div>
-                    </div>
+                        <div class="blog-slider__pagination"></div>
+                      </div>
+                   </div>
                 </div>
             </div>
 
@@ -399,23 +426,19 @@
         <!--=============== CERTIFICATES ===============-->
         <section class="certificate" id="certificate" >
             <h2><span>C</span>ertificates</h2>
-            <section class="section">
-                <div class="swiper-slide">
-                <div class="container-general">
-                    <div class="gallery-wrap wrap-effect-3">
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    </div>
-                </div>
-                </div>
-            </section>
+            <section id="slider">
+                <input type="radio" name="slider" id="s1" checked>
+                <input type="radio" name="slider" id="s2">
+                <input type="radio" name="slider" id="s3">
+                <input type="radio" name="slider" id="s4">
+                <input type="radio" name="slider" id="s5">
+              
+                <label for="s1" id="slide1"><img src="./assets/img/CodeAlpha.png" alt="CodeAlpha"></label>
+                <label for="s2" id="slide2"><img src="./assets/img/IBM_Datascince.png" alt="IBM_Datascince"></label>
+                <label for="s3" id="slide3"><img src="./assets/img/CodSoft.png" alt="CodSoft"></label>
+                <label for="s4" id="slide4"><img src="./assets/img/cisco_Cybersecurity Essentials.png" alt="cisco_Cybersecurity Essentials"></label>
+                <label for="s5" id="slide5"><img src="./assets/img/Infosys.png" alt=""></label>
+              </section>
         </section>
         
         <!--=============== CONTACT ===============-->
@@ -559,7 +582,6 @@
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/script.js"type="text/javascript" charset="utf-8"></script>
-
 </body>
 
 </html>
