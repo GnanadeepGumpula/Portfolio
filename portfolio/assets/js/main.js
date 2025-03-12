@@ -307,3 +307,143 @@ var swiper = new Swiper('.blog-slider', {
     clickable: true,
   }
 });
+
+/*
+certificates
+*/
+document.addEventListener('DOMContentLoaded', function() {
+  const slider = document.getElementById('slider1');
+  const cards = document.querySelectorAll('.card1');
+  const prevBtn = document.getElementById('prev');
+  const nextBtn = document.getElementById('next');
+  const dotsContainer = document.getElementById('dots');
+  
+  let currentIndex = 0;
+  const totalCards = cards.length;
+  let autoplayInterval;
+
+  // Create dots
+  for (let i = 0; i < totalCards; i++) {
+      const dot = document.createElement('div');
+      dot.classList.add('dot');
+      if (i === 0) dot.classList.add('active');
+      dot.dataset.index = i;
+      dot.addEventListener('click', () => {
+        goToCard(i);
+      });
+      dotsContainer.appendChild(dot);
+    }
+
+     // Initialize the 3D positions
+     function updateCardsPosition() {
+      cards.forEach((card, index) => {
+        // Calculate the angle for each card
+        const theta = (index - currentIndex) * (2 * Math.PI / totalCards);
+        
+        // Radius of the circle
+        const radius = 400;
+        
+        // Calculate x and z positions on the circle
+        const x = radius * Math.sin(theta);
+        const z = radius * Math.cos(theta) - radius;
+        
+        // Apply transformations
+        card.style.transform = `translateX(${x}px) translateZ(${z}px) rotateY(${-theta * (180 / Math.PI)}deg)`;
+        
+        // Scale and opacity based on z position
+        const scale = Math.max(0.6, (1000 + z) / 1000);
+        const opacity = Math.max(0.4, (1000 + z) / 1000);
+        
+        card.style.opacity = opacity;
+        card.style.scale = scale;
+        
+        // Bring current card to front with higher z-index
+        card.style.zIndex = index === currentIndex ? 10 : 5;
+      });
+      
+      // Update active dot
+      document.querySelectorAll('.dot').forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentIndex);
+      });
+    }
+    // Go to specific card
+    function goToCard(index) {
+      currentIndex = index;
+      updateCardsPosition();
+    }
+    
+    // Next and previous buttons
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % totalCards;
+      updateCardsPosition();
+      resetAutoplay();
+    });
+    
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+      updateCardsPosition();
+      resetAutoplay();
+    });
+    
+    // Touch events for mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    slider1.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    });
+    
+    slider1.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+    });
+    
+    function handleSwipe() {
+      const swipeThreshold = 50;
+      if (touchEndX < touchStartX - swipeThreshold) {
+        // Swipe left, go to next
+        nextBtn.click();
+      } else if (touchEndX > touchStartX + swipeThreshold) {
+        // Swipe right, go to previous
+        prevBtn.click();
+      }
+    }
+    
+    // Autoplay functionality
+    function startAutoplay() {
+      autoplayInterval = setInterval(() => {
+        currentIndex = (currentIndex + 1) % totalCards;
+        updateCardsPosition();
+      }, 5000);
+    }
+    
+    function resetAutoplay() {
+      clearInterval(autoplayInterval);
+      startAutoplay();
+    }
+    
+    // Initialize positions and start autoplay
+    updateCardsPosition();
+    startAutoplay();
+    
+    // Pause autoplay when user interacts with the slider
+    slider1.addEventListener('mouseenter', () => {
+      clearInterval(autoplayInterval);
+    });
+    
+    slider1.addEventListener('mouseleave', () => {
+      startAutoplay();
+    });
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') {
+        nextBtn.click();
+      } else if (e.key === 'ArrowLeft') {
+        prevBtn.click();
+      }
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', updateCardsPosition);
+  });
