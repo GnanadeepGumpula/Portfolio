@@ -292,7 +292,10 @@ sr.reveal(`.footer, footer__container`, {
   distance: "30px",
 });
 
-/* project */
+/*                *\
+       project 
+\*                */
+
 
 var swiper = new Swiper('.blog-slider', {
   spaceBetween: 30,
@@ -308,9 +311,9 @@ var swiper = new Swiper('.blog-slider', {
   }
 });
 
-/*
-certificates
-*/
+/*                *\
+    certificates
+\*                */
 document.addEventListener('DOMContentLoaded', function() {
   const slider = document.getElementById('slider1');
   const cards = document.querySelectorAll('.card1');
